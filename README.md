@@ -50,7 +50,8 @@ nvt.mdp:           AT NVT equilibration.
 npt.mdp:           AT NPT equilibration.   
 prod.mdp:          AT production.  
 
-### pdb files (structures) after modification by modeller.  
+### pdb files (structures) 
+### after modification by modeller.    
 <XXX>.pdb.   
   
 ### Other files
