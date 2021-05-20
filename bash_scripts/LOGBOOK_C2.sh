@@ -232,7 +232,6 @@ py2=/sansom/s157/bioc1642/anaconda2/bin/python2.7
 py3=/sansom/s157/bioc1642/anaconda3/bin/python3.7
 martinize=/sansom/s157/bioc1642/Desktop/Scripts/martinize_GROMACS_2018_plumed.py # edited line 1851 to have "/gromacs/top/" instead of "/top/"
 insane=/sansom/s157/bioc1642/Desktop/Scripts/insane.py
-cg2at=/sansom/s157/bioc1642/Desktop/Scripts/cg2at/cg2at-gmx2019-martini2.pl
 
 # define paths to mdp files
 min=/sansom/s157/bioc1642/Desktop/prj_C2/DLL4_MARTINI20/minimization.mdp
