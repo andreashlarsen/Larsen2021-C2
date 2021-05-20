@@ -22,7 +22,8 @@ LOGBOOK_analyze_AT:   bash script to analyze atomistic simulations.
 
 ### own python scripts
 Dist_vs_time.py:      calculates and plots Dist vs. time (Fig. 3).    
-Rzz_version2.py:      calculates and plots Rzz vs dist (Fig. 4).  
+Rzz_version2.py:      calculates and plots Rzz vs dist (Fig. 4). 
+get_std_FEP.py:       calculates std dev for FEP.   
 AT_analyze.py:        analyze and plot for AT sims (Fig. 6). 
 Contacts.py:          calculate PIP2 contacts (Fig. 7).  
 exponential_decay.py: fit exp docay to dist vs time (Fig. S1)
