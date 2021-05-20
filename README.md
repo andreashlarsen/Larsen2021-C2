@@ -39,7 +39,7 @@ martinize_GROMACS_2018_plumed.py: edited line 1851 to have "/gromacs/top/" inste
 dist_ang_restraint_<XXX>.dat: Plumed files for each protein.   
   
 ### mdp files 
-#### note: some of the mdp files are copied and modified by LOGBOOK_C2.sh or UMBRELLA.sh or LOGBOOK_AT.sh before they are used.   
+#### note: some of the mdp files are copied and modified by LOGBOOK_C2.sh or UMBRELLA.sh or LOGBOOK_AT.sh before use.      
 minimization.mdp:  CG minimization.   
 equilibration.mdp: CG equilibration.    
 production.mdp:    CG production.    
