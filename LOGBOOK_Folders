@@ -1,0 +1,192 @@
+
+
+LOOGBOOK of simulations
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+folder  protein    	domains	gromacs       	FF (water)	Ca2+	comments
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    0	test	 	C2-DSL	2018_plumed	Martini2.1	no	DLL4, PDB 5mvx
+									see if addition of DSL prevents unphysical binding
+
+    1   test    	C2	2018_plumed  	Martini2.1	no	DLL4, PDB 5mvx
+									test with constraining z-movement (only bind to top of bilayer)
+
+    2	test	 	C2	2018_plumed	Martini2.1	no	DLL4, PDB 5mvx
+									angular and moving roof restraint (plumed wall), 
+									PG lips
+
+    3	test		C2-DSL	2018_plumed	Martini3	no	DLL4, PDB 5mvx; 
+									no membrane
+
+    4	test	   	C2	2018_plumed	Martini2.1	no	DLL1, PDBD 4xbm
+									descending roof hight in plumed restraint
+									missing residues generated
+
+    5   test	        C2	2018_plumed     Martini2.1      no	DLL1, PDBD 4xbm
+									testing of -dm command in insane
+
+    6   test		C2	2018_plumed     Martini2.1	no	DLL4, PDB 5mvx
+									PS (x6)
+									PC:PS:PE (80:15:5) (x6)
+									PC:PS:PG (80:15:5) (x6)
+									angular restraint
+
+    7   test		C2	2018_plumed     Martini2.1	no 	DLL1, PDBD 4xbm
+									OBS: had wrong angular restraint (wrong beads in plumed file). 
+									PS:PS:PE (80:15:5) (x5)
+ 									angular restraint
+
+    8   PI3K		C2	2018_plumed     Martini2.1	no	PDB 6btz; type 1
+									membrane with PIP2
+									PC (x5)
+									PC:PS (80:20) (x4)
+									PC:PS:PIP2 (80:15:5) (x6)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0)
+									PC:PIP2 (90:10) (x6)
+
+    9   FVa		C2	2018_plumed     Martini2.1	no	PDB 1czv; type 3
+									PC (x4)
+									PC:PS (80:20) (x4)
+									no PIP binding reported
+
+   10   F-spondin	C2    	2018_plumed     Martini2.1      no	PDB 2zou; 
+									membrane with PC, PS, PIP2, PIP3 
+									!! OBS: thought it was KIBRA (PDB 2z0u), not F-spondin (PDB 2zou)
+
+   11   RIM2     	C2   	2018_plumed     Martini2.1      no	PDB 2bwq; type 1
+									PC (x7)
+									PC:PS (80:20) (x7)
+									PC:PS:PIP2 (75:20:5) (x7)
+									PC:PS:PIP2:PIP3 (73:20:5:2) (x4) (umbrella)
+									Strong N-term binding via F2 and L3: maybe truncate or mutate?
+									F acts as a lipid and penetrates into hydrophobic lipid tail environment?
+									PMF testing in folder PCPSPIP2PIP3_0:
+									umbrella1: umbrella sampling with 0.15 nm spacing, time 500 ns
+									umbrella2: umbrella sampling with 0.10 nm spacing, time 500 ns
+									umbrella3: umbrella sampling with 0.05 nm spacing, time 500 ns
+									umbrella3: umbrella sampling with 0.05 nm spacing, time 1000 ns
+
+   12   KIBRA/WWC1    	C2 	2018_plumed     Martini2.1      no	PDB 6fjd; type 1
+									mutant C771A 
+									MRGSHHHHHHGS not included: it is a tag, not part of UNIPROT sequence;
+									no missing residues (except from tag);
+									PC (x9)
+									PC:PS (80:20) (x9)
+									PC:PS:PIP2 (75:20:5) (x9)
+									PC:PS:PIP2:PIP3 (73:20:5:2) (x4)
+
+   13 	MFG-E8    	C2	2018_plumed     Martini2.1      no 	PDB 2l9l; type 3
+									no missing residues, only HIS tag;
+									truncate expression tags -5 to -2
+									PC (x3)
+									PC:PS (80:20) (x9)
+   									no PIP binding reported
+
+   14	SHIP2		C2	2018_plumed     Martini2.1     	no	PDB 5okm; type 2
+									Missing res: linker from Ptase to C2 (not added), C-term PTER (added)
+									OBS: calculated with wrong beads in plumed file - that part needs recalculation (if needed)
+									PC (x5)
+									PC:PS (80:20) (x7)
+									PC:PS:PIP2 (80:15:5) (x7)
+									PC:PS:PIP3 (80:15:5) (x5)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0)
+
+   15	SMURF2		C2	2018_plumed     Martini2.1     	no	PDB 2jqz: type 2
+									PC:PIP1 (90:10) (x4)
+									PC:PIP2 (90:10) (x4)
+									PC:PIP3 (90:10)	(x4)
+									PC (x0)
+									PC:PS (80:20) (x5)
+									PC:PS:PIP2 (80:15:5) (x3)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0)
+		
+   16	PTEN		C2	2018_plumed     Martini2.1     	no	PDB 1d5r; type 2
+									PC (x4) 
+									PC:PIP2 (90:10) (x4)
+									PC:PIP3 (90:10) (x4)
+									PC:PS (80:20) (x8)
+									PC:PS:PIP2 (80:15:5) (x8)	
+
+   17	FVIII		C2	2018_plumed     Martini2.1     	no	PDB 3hny; type 3
+									PC (x5)
+									PC:PS (80:20) (x5)
+									no PIP binding reported
+
+   18   RIM2_trunc     	C2   	2018_plumed     Martini2.1      no	PDB 2bwq_t (without residue 1-3); type 1
+									Strong N-term binding via F2 and L3: in this simulation they have been removed
+									PC (x?)
+									PC:PS (80:20) (x3)
+									PC:PS:PIP2 (80:15:5) (x4)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0) 
+
+   19	DLL1		C2	2018_plumed     Martini2.1      no	PDB 4xbm; type 2
+									PC (x5)
+									PC:PS (80:20) (x7)
+									PC:PS:PIP2 (80:15:5) (x7)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0) 	
+								
+   20	DLL4		C2	2018_plumed     Martini2.1      no	PDB 5mvx; type 2
+									PC (x0)
+									PC:PS (80:20) (x7)
+									PC:PS:PIP2 (80:15:5) (x7)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0) 									
+
+   21	DLL4_trunc	C2	2018_plumed     Martini2.1      no	PDB 5mvx_t; type 2
+                                                      			truncated protein: removed C-terminal I148
+									PC (x3)
+									PC:PS (80:20) (x4)
+									PC:PS:PIP2 (80:15:5) (x4)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0) 
+
+   22 	KIBRA_trunc    	C2 	2018_plumed     Martini2.1      no	PDB 6fjd_t; type 1
+									truncated protein: removed C-terminal L125 (binding) and S126 (not binding)
+									mutant C771A 
+									PC (x4)
+									PC:PS (80:20) (x4)
+									PC:PS:PIP2 (80:15:5) (x4)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0)
+
+   23 	PTEN_trunc    	C2 	2018_plumed     Martini2.1      no	PDB 1d5r_t; type 2
+									truncated protein: removed N-terminal P1 and V2
+									mutant C771A 
+									PC (x3)
+									PC:PS (80:20) (x4)
+									PC:PS:PIP2 (80:15:5) (x4)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0)
+
+   24	SHIP2_trunc	C2	2018_plumed     Martini2.1     	no	PDB 5okm_t; type 2
+									removed 4 C-term: P131 (bind), T132 (no bind), E (no bind), R (no bind)
+								 	removed 3 N-term: Q1 (no bind), A2 (no bind), Y3 (bind)
+									PC (x4)
+									PC:PS (80:20) (x5)
+									PC:PS:PIP2 (80:15:5) (x5)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0)
+
+   25	SHIP2_trunc2	C2	2018_plumed     Martini2.1     	no	PDB 5okm_tt; type 2
+									truncated further
+								 	removed N-term: I1 (bind)
+									PC (x0)
+									PC:PS (80:20) (x0)
+									PC:PS:PIP2 (80:15:5) (x0)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0)
+
+   26	DLL1_trunc	C2	2018_plumed     Martini2.1     	no	PDB 4xbm_t; type 2
+									removed S1 (minor bind), S2 (minor bind), G1 (no bind), S1 (bind)
+									PC (x0)
+									PC:PS (80:20) (x0)
+									PC:PS:PIP2 (80:15:5) (x0)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0)
+
+  27 	PI3K		C2	2018_plumed     Martini2.1     	no	PDB 6bu0; type 1
+									one C2 from assymmetric unit
+									PC (x0)
+									PC:PS (80:20) (x0)
+									PC:PS:PIP2 (80:15:5) (x0)
+									PC:PS:PIP2:PIP3 (80:13:5:2) (x0)
+
+  28	SHIP2		FL	2018_plumed	Martini2.1	no	PDB 5okm, C2 and Ptase
+
+  29	PTEN		FL	2018_plumed 	Martini2.1	no	PDB 1d5r, C2 and Ptase
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
