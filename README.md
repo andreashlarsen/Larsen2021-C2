@@ -53,4 +53,4 @@ prod.mdp:          AT production.
   
 ### Other files
 LOGBOOK_Folders: text file with overview of the content in the different folders (referred to in the bash scripts).   
-
+Overview.ods:    overview of C2 structures (used for initial selection of structures).   
