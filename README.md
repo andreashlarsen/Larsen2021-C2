@@ -52,7 +52,7 @@ prod.mdp:          AT production.
 
 ### pdb files (structures) 
 ##### after modification by modeller.    
-*.pdb.   
+***.pdb.   
   
 ### Other files
 LOGBOOK_Folders: text file with overview of the content in the different folders (referred to in the bash scripts).   
