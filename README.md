@@ -34,6 +34,9 @@ Dist_vs_time_PTEN:    calculate and plot dist vs time for larger-construct PTEN.
 ### modified Martini scripts 
 martinize_GROMACS_2018_plumed.py: edited line 1851 to have "/gromacs/top/" instead of "/top/"
 
+### plumed files
+dist_ang_restraint_<XXX>.dat: Plumed files for each protein.   
+  
 ### mdp files 
 note: some of these mdp files are copied and modified by LOGBOOK_C2.sh or UMBRELLA.sh before they are used.   
 minimization.mdp
