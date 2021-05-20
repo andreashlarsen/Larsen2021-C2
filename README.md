@@ -36,7 +36,7 @@ Dist_vs_time_PTEN:    calculate and plot dist vs time for larger-construct PTEN.
 martinize_GROMACS_2018_plumed.py: edited line 1851 to have "/gromacs/top/" instead of "/top/"
 
 ### plumed files
-dist_ang_restraint_<XXX>.dat: Plumed files for each protein.   
+dist_ang_restraint_*.dat: Plumed files for each protein.   
 
 ### mdp files
 ##### note: some of the mdp files are copied and modified by LOGBOOK_C2.sh or UMBRELLA.sh or LOGBOOK_AT.sh before use.      
@@ -52,7 +52,7 @@ prod.mdp:          AT production.
 
 ### pdb files (structures) 
 ##### after modification by modeller.    
-<XXX>.pdb.   
+*.pdb.   
   
 ### Other files
 LOGBOOK_Folders: text file with overview of the content in the different folders (referred to in the bash scripts).   
