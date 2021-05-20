@@ -50,6 +50,8 @@ min.mdp:           AT minimization.
 nvt.mdp:           AT NVT equilibration.   
 npt.mdp:           AT NPT equilibration.   
 prod.mdp:          AT production.  
+em_RFEP.mdp:       FEP equilibration.   
+md_RFEP.mdp:       FEP production.     
 
 ### pdb files (structures) 
 ##### after modification by modeller.    
