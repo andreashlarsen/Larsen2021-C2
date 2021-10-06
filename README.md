@@ -36,6 +36,9 @@ Dist_vs_time_PTEN:    calculate and plot dist vs time for larger-construct PTEN.
 ### modified Martini scripts 
 martinize_GROMACS_2018_plumed.py: edited line 1851 to have "/gromacs/top/" instead of "/top/"
 
+### modified Martini topology files
+martini_v2.0_lipids_all_201506.itp: added (optional) restaint on POP2, "POSRES_POP2"    
+
 ### plumed files
 dist_ang_restraint_***.dat: Plumed files for each protein.   
 
@@ -58,5 +61,5 @@ md_RFEP.mdp:       FEP production.
 ***.pdb.   
   
 ### Other files
-LOGBOOK_Folders: text file with overview of the content in the different folders (referred to in the bash scripts).   
+LOGBOOK_Folders: text file with overview of the content in the different folders (referred to in the bash scripts).        
 Overview.ods:    overview of C2 structures (used for initial selection of structures).   
