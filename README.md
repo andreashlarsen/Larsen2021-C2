@@ -21,17 +21,17 @@ LOGBOOK_AT.sh:        bash script to run atomistic simulations.
 LOGBOOK_analyze_AT:   bash script to analyze atomistic simulations.    
 
 ### own python scripts
-Dist_vs_time.py:      calculates and plots Dist vs. time (Fig. 3).    
-Rzz_version2.py:      calculates and plots Rzz vs dist (Fig. 4). 
-get_std_FEP.py:       calculates std dev for FEP.   
-AT_analyze.py:        analyze and plot for AT sims (Fig. 6). 
-Contacts.py:          calculate PIP2 contacts (Fig. 7).  
-exponential_decay.py: fit exp docay to dist vs time (Fig. S1)
-pmf_vs_contacts.py:   plotting script for pmf vs contacts (Fig. S8).
-extract_frames:       extract frames for umbrella sampling, used in UMBRELLA.sh.   
+Dist_vs_time.py:      calculates and plots Dist vs. time (Fig. 3).       
+Rzz_version2.py:      calculates and plots Rzz vs dist (Fig. 4).   
+get_std_FEP.py:       calculates std dev for FEP.    
+AT_analyze.py:        analyze and plot for AT sims (Fig. 6).    
+Contacts.py:          calculate PIP2 contacts (Fig. 7).     
+exponential_decay.py: fit exp docay to dist vs time (Fig. S1).     
+pmf_vs_contacts.py:   plotting script for pmf vs contacts (Fig. S8).     
+extract_frames:       extract frames for umbrella sampling, used in UMBRELLA.sh.      
 Dist_PIP2.py:         
 SHIP2_PMF_analyze:   
-Dist_vs_time_PTEN:    calculate and plot dist vs time for larger-construct PTEN.     
+Dist_vs_time_PTEN:    calculate and plot dist vs time for larger-construct PTEN.      
 
 ### modified Martini scripts 
 martinize_GROMACS_2018_plumed.py: edited line 1851 to have "/gromacs/top/" instead of "/top/"
